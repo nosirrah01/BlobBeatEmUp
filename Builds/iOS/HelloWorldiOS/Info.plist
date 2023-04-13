@@ -70,9 +70,9 @@
     <key>UnityAddRemoteNotificationCapability</key>
     <false />
     <key>UnityCloudProjectID</key>
-    <string />
+    <string></string>
     <key>UnityCrashSubmissionURL</key>
-    <string />
+    <string></string>
     <key>UnityNotificationDefaultAuthorizationOptions</key>
     <integer>7</integer>
     <key>UnityNotificationRequestAuthorizationForRemoteNotificationsOnAppLaunch</key>
