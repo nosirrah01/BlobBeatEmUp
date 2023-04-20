@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 128777952}
   - component: {fileID: 128777951}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: HeroBlob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
