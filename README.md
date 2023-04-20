@@ -24,7 +24,7 @@ In the future, BlobBeatEmUp aims to include the following features:
 ## Installation and Setup
 
 **Requirements:**
-- Unity version 2021.3.22f1
+- Unity version 2021.3.23f1
 - Git LFS (for handling large files in the repository, specifically files with the .a extension within the "Builds" folder and its subfolders)
 
 **Steps:**

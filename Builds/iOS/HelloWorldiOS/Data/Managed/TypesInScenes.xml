@@ -1,4 +1,7 @@
 <linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="Readme" preserve="nothing"/>
+	</assembly>
 	<assembly fullname="UnityEngine">
 		<type fullname="UnityEditor.AudioManager" preserve="nothing"/>
 		<type fullname="UnityEditor.InputManager" preserve="nothing"/>

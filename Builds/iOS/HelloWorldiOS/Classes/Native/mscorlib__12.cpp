@@ -3325,7 +3325,7 @@ struct DecimalConstantAttribute_tC47069AE924F61995AE7430546D5178134D97772  : pub
 struct Delegate_t  : public RuntimeObject
 {
 	// System.IntPtr System.Delegate::method_ptr
-	Il2CppMethodPointer ___method_ptr_0;
+	intptr_t ___method_ptr_0;
 	// System.IntPtr System.Delegate::invoke_impl
 	intptr_t ___invoke_impl_1;
 	// System.Object System.Delegate::m_target
@@ -11459,10 +11459,10 @@ IL_0175_1:
 			ObjectProgress_tE42F52AC95A6FA0D5D97DDCBC629FD403CC342F1* L_26 = V_5;
 			ObjectProgress_tE42F52AC95A6FA0D5D97DDCBC629FD403CC342F1* L_27 = V_5;
 			NullCheck(L_27);
-			int32_t* L_28 = (&L_27->___expectedType_3);
+			int32_t* L_28 = (int32_t*)(&L_27->___expectedType_3);
 			ObjectProgress_tE42F52AC95A6FA0D5D97DDCBC629FD403CC342F1* L_29 = V_5;
 			NullCheck(L_29);
-			RuntimeObject** L_30 = (&L_29->___expectedTypeInformation_4);
+			RuntimeObject** L_30 = (RuntimeObject**)(&L_29->___expectedTypeInformation_4);
 			NullCheck(L_26);
 			bool L_31;
 			L_31 = ObjectProgress_GetNext_mBA2B8300F8E7DB102CC73654850C1739CE7D1C65(L_26, L_28, L_30, NULL);
@@ -12366,10 +12366,10 @@ IL_0187:
 		ObjectMap_tD3A00A591DCF73F095AA7182079FF29814590B99* L_77 = V_0;
 		ParseRecord_tDC977DA000F40526F686FA61B38DCEE8057A9319* L_78 = V_2;
 		NullCheck(L_78);
-		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37** L_79 = (&L_78->___PRsi_39);
+		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37** L_79 = (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37**)(&L_78->___PRsi_39);
 		ParseRecord_tDC977DA000F40526F686FA61B38DCEE8057A9319* L_80 = V_2;
 		NullCheck(L_80);
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918** L_81 = (&L_80->___PRmemberData_38);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918** L_81 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918**)(&L_80->___PRmemberData_38);
 		NullCheck(L_77);
 		ReadObjectInfo_tBC4855E4A295BCD624E3FD3A6F6C5BF9B6735416* L_82;
 		L_82 = ObjectMap_CreateObjectInfo_mA746294ACC6848B2B34B19785D9712812ED32DF3(L_77, L_79, L_81, NULL);
@@ -12640,7 +12640,7 @@ IL_004d:
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_21 = L_20;
 		BinaryObjectWithMap_t85EE63CCBCE6D1494AF149D74FC8935CFD592302* L_22 = ___0_record;
 		NullCheck(L_22);
-		int32_t* L_23 = (&L_22->___assemId_5);
+		int32_t* L_23 = (int32_t*)(&L_22->___assemId_5);
 		String_t* L_24;
 		L_24 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_23, NULL);
 		BinaryObjectWithMap_t85EE63CCBCE6D1494AF149D74FC8935CFD592302* L_25 = ___0_record;
@@ -12888,10 +12888,10 @@ IL_01fa:
 		ObjectMap_tD3A00A591DCF73F095AA7182079FF29814590B99* L_108 = V_4;
 		ParseRecord_tDC977DA000F40526F686FA61B38DCEE8057A9319* L_109 = V_2;
 		NullCheck(L_109);
-		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37** L_110 = (&L_109->___PRsi_39);
+		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37** L_110 = (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37**)(&L_109->___PRsi_39);
 		ParseRecord_tDC977DA000F40526F686FA61B38DCEE8057A9319* L_111 = V_2;
 		NullCheck(L_111);
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918** L_112 = (&L_111->___PRmemberData_38);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918** L_112 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918**)(&L_111->___PRmemberData_38);
 		NullCheck(L_108);
 		ReadObjectInfo_tBC4855E4A295BCD624E3FD3A6F6C5BF9B6735416* L_113;
 		L_113 = ObjectMap_CreateObjectInfo_mA746294ACC6848B2B34B19785D9712812ED32DF3(L_108, L_110, L_112, NULL);
@@ -13068,7 +13068,7 @@ IL_004d:
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_21 = L_20;
 		BinaryObjectWithMapTyped_t89E4C2F17EA7C4227441869FC92291073B2C8749* L_22 = ___0_record;
 		NullCheck(L_22);
-		int32_t* L_23 = (&L_22->___assemId_8);
+		int32_t* L_23 = (int32_t*)(&L_22->___assemId_8);
 		String_t* L_24;
 		L_24 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_23, NULL);
 		BinaryObjectWithMapTyped_t89E4C2F17EA7C4227441869FC92291073B2C8749* L_25 = ___0_record;
@@ -13307,10 +13307,10 @@ IL_01f8:
 		ObjectMap_tD3A00A591DCF73F095AA7182079FF29814590B99* L_104 = V_3;
 		ParseRecord_tDC977DA000F40526F686FA61B38DCEE8057A9319* L_105 = V_2;
 		NullCheck(L_105);
-		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37** L_106 = (&L_105->___PRsi_39);
+		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37** L_106 = (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37**)(&L_105->___PRsi_39);
 		ParseRecord_tDC977DA000F40526F686FA61B38DCEE8057A9319* L_107 = V_2;
 		NullCheck(L_107);
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918** L_108 = (&L_107->___PRmemberData_38);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918** L_108 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918**)(&L_107->___PRmemberData_38);
 		NullCheck(L_104);
 		ReadObjectInfo_tBC4855E4A295BCD624E3FD3A6F6C5BF9B6735416* L_109;
 		L_109 = ObjectMap_CreateObjectInfo_mA746294ACC6848B2B34B19785D9712812ED32DF3(L_104, L_106, L_108, NULL);
@@ -14197,16 +14197,16 @@ IL_01bd:
 		BinaryAssemblyInfo_t79F766E4C0D2CA453DF52652A6914DCA4968EA3C* L_86 = V_0;
 		ParseRecord_tDC977DA000F40526F686FA61B38DCEE8057A9319* L_87 = V_3;
 		NullCheck(L_87);
-		int32_t* L_88 = (&L_87->___PRarrayElementTypeCode_19);
+		int32_t* L_88 = (int32_t*)(&L_87->___PRarrayElementTypeCode_19);
 		ParseRecord_tDC977DA000F40526F686FA61B38DCEE8057A9319* L_89 = V_3;
 		NullCheck(L_89);
-		String_t** L_90 = (&L_89->___PRarrayElementTypeString_16);
+		String_t** L_90 = (String_t**)(&L_89->___PRarrayElementTypeString_16);
 		ParseRecord_tDC977DA000F40526F686FA61B38DCEE8057A9319* L_91 = V_3;
 		NullCheck(L_91);
-		Type_t** L_92 = (&L_91->___PRarrayElementType_17);
+		Type_t** L_92 = (Type_t**)(&L_91->___PRarrayElementType_17);
 		ParseRecord_tDC977DA000F40526F686FA61B38DCEE8057A9319* L_93 = V_3;
 		NullCheck(L_93);
-		bool* L_94 = (&L_93->___PRisArrayVariant_18);
+		bool* L_94 = (bool*)(&L_93->___PRisArrayVariant_18);
 		BinaryConverter_TypeFromInfo_mE25816FC556F2C6370233DEC14E06E36E74A420B(L_82, L_84, L_85, L_86, L_88, L_90, L_92, L_94, NULL);
 		ParseRecord_tDC977DA000F40526F686FA61B38DCEE8057A9319* L_95 = V_3;
 		NullCheck(L_95);
@@ -18507,7 +18507,7 @@ FINALLY_0002:
 					V_0 = L_0;
 					int32_t L_1 = V_0;
 					V_1 = ((int32_t)(L_1|1));
-					int32_t* L_2 = (&__this->____state_1);
+					int32_t* L_2 = (int32_t*)(&__this->____state_1);
 					int32_t L_3 = V_1;
 					int32_t L_4 = V_0;
 					int32_t L_5;
@@ -18586,7 +18586,7 @@ IL_0028:
 				{
 					int32_t L_5 = V_0;
 					V_1 = ((int32_t)il2cpp_codegen_add(L_5, 4));
-					int32_t* L_6 = (&__this->____state_1);
+					int32_t* L_6 = (int32_t*)(&__this->____state_1);
 					int32_t L_7 = V_1;
 					int32_t L_8 = V_0;
 					int32_t L_9;
@@ -18833,7 +18833,7 @@ IL_0080:
 
 IL_0087:
 				{
-					int32_t* L_16 = (&__this->____state_1);
+					int32_t* L_16 = (int32_t*)(&__this->____state_1);
 					int32_t L_17 = V_1;
 					int32_t L_18 = V_0;
 					int32_t L_19;
@@ -19143,7 +19143,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GCHandle_Free_m1320A260E487EB1EA6D95F9E5
 		}
 	}
 	{
-		intptr_t* L_4 = (&__this->___handle_0);
+		intptr_t* L_4 = (intptr_t*)(&__this->___handle_0);
 		intptr_t L_5 = ((IntPtr_t_StaticFields*)il2cpp_codegen_static_fields_for(IntPtr_t_il2cpp_TypeInfo_var))->___Zero_1;
 		intptr_t L_6 = V_0;
 		intptr_t L_7;
@@ -19328,7 +19328,7 @@ IL2CPP_EXTERN_C  bool GCHandle_Equals_m27E0A4AD1CA71DA8071F816D6BFCD7556BC3E015_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GCHandle_GetHashCode_m0CC8441CFC3B1DA699B8D77F4CF69BFE88EBA442 (GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC* __this, const RuntimeMethod* method) 
 {
 	{
-		intptr_t* L_0 = (&__this->___handle_0);
+		intptr_t* L_0 = (intptr_t*)(&__this->___handle_0);
 		int32_t L_1;
 		L_1 = IntPtr_GetHashCode_m669B16AD7483C1C396E48F41D9CAC4B719E38F3D(L_0, NULL);
 		return L_1;
@@ -24961,7 +24961,7 @@ IL_005e:
 	}
 	{
 		Assembly_t* L_13 = __this->___MainAssembly_2;
-		int32_t* L_14 = (&__this->____fallbackLoc_7);
+		int32_t* L_14 = (int32_t*)(&__this->____fallbackLoc_7);
 		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_15;
 		L_15 = ManifestBasedResourceGroveler_GetNeutralResourcesLanguage_m511D1DD15709731A35C3115E43BC2DBF3E588B52(L_13, L_14, NULL);
 		__this->____neutralResourcesCulture_3 = L_15;
@@ -29403,7 +29403,7 @@ IL_0052:
 	{
 		ResourceReader_t681F002277727FF2F8848B3F14C2ACD331171930* L_10 = __this->____reader_0;
 		int32_t L_11 = __this->____currentName_2;
-		int32_t* L_12 = (&__this->____dataPosition_3);
+		int32_t* L_12 = (int32_t*)(&__this->____dataPosition_3);
 		NullCheck(L_10);
 		String_t* L_13;
 		L_13 = ResourceReader_AllocateStringForNameIndex_mF0705A8E33442B583B04679507B76BFBDFFBCBD3(L_10, L_11, L_12, NULL);
@@ -29577,7 +29577,7 @@ IL_00f2_1:
 						Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_18, (&V_5), NULL);
 						ResourceReader_t681F002277727FF2F8848B3F14C2ACD331171930* L_19 = __this->____reader_0;
 						int32_t L_20 = __this->____currentName_2;
-						int32_t* L_21 = (&__this->____dataPosition_3);
+						int32_t* L_21 = (int32_t*)(&__this->____dataPosition_3);
 						NullCheck(L_19);
 						String_t* L_22;
 						L_22 = ResourceReader_AllocateStringForNameIndex_mF0705A8E33442B583B04679507B76BFBDFFBCBD3(L_19, L_20, L_21, NULL);

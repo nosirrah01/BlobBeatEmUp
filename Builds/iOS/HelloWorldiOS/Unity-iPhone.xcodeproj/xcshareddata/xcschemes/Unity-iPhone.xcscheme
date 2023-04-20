@@ -22,7 +22,7 @@
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
-   <LaunchAction buildConfiguration="ReleaseForRunning" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" selectedLauncherIdentifier="Xcode.DebuggerFoundation.Launcher.LLDB" launchStyle="0" useCustomWorkingDirectory="NO" ignoresPersistentStateOnLaunch="NO" debugDocumentVersioning="YES" debugXPCServices="NO" debugServiceExtension="internal" enableGPUFrameCaptureMode="3" enableGPUValidationMode="1" allowLocationSimulation="YES" queueDebuggingEnabled="No" GPUProfilerEnabled="No">
+   <LaunchAction buildConfiguration="ReleaseForRunning" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" selectedLauncherIdentifier="Xcode.DebuggerFoundation.Launcher.LLDB" launchStyle="0" useCustomWorkingDirectory="NO" ignoresPersistentStateOnLaunch="NO" debugDocumentVersioning="YES" debugXPCServices="NO" debugServiceExtension="internal" enableGPUFrameCaptureMode="3" enableGPUValidationMode="1" allowLocationSimulation="YES" queueDebuggingEnabled="No" GPUProfilerEnabled="No" disablePerformanceAntipatternChecker="YES">
       <BuildableProductRunnable runnableDebuggingMode="0">
          <BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="1D6058900D05DD3D006BFB54" BuildableName="Unity-Target-New.app" BlueprintName="Unity-iPhone" ReferencedContainer="container:Unity-iPhone.xcodeproj">
          </BuildableReference>

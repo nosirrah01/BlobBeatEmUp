@@ -2040,6 +2040,13 @@ struct SwitchCase_t997AED5EFE9B4F7D5A43C16515ADEE08B5A1572A  : public RuntimeObj
 	Expression_t70AA908ECBD33E94249BF235E4EBB0F831AD8785* ___U3CBodyU3Ek__BackingField_1;
 };
 
+// System.Linq.Expressions.SymbolDocumentInfo
+struct SymbolDocumentInfo_tA9A0448DE427113FDD3737FBAD9518461781A8B3  : public RuntimeObject
+{
+	// System.String System.Linq.Expressions.SymbolDocumentInfo::<FileName>k__BackingField
+	String_t* ___U3CFileNameU3Ek__BackingField_0;
+};
+
 // System.Linq.Expressions.Interpreter.TryCatchFinallyHandler
 struct TryCatchFinallyHandler_t5155D0E10E251EE92FAFB40FA05722A68F1265D0  : public RuntimeObject
 {
@@ -3132,7 +3139,7 @@ struct ConstructorInfo_t1B5967EE7E5554272F79F8880183C70AD240EEEB  : public Metho
 struct Delegate_t  : public RuntimeObject
 {
 	// System.IntPtr System.Delegate::method_ptr
-	Il2CppMethodPointer ___method_ptr_0;
+	intptr_t ___method_ptr_0;
 	// System.IntPtr System.Delegate::invoke_impl
 	intptr_t ___invoke_impl_1;
 	// System.Object System.Delegate::m_target
@@ -3512,13 +3519,6 @@ struct StoreLocalInstruction_t90D68BD357BBD648259E113AB965800C645E32D9  : public
 // System.Linq.Expressions.Interpreter.StoreStaticFieldInstruction
 struct StoreStaticFieldInstruction_t0BAF143B7FDCABDB4FD7363E3A2CF24A83114CF4  : public FieldInstruction_tA134E86FB39367A1B0CA4657F357A9C987F4BFEB
 {
-};
-
-// System.Linq.Expressions.SymbolDocumentInfo
-struct SymbolDocumentInfo_tA9A0448DE427113FDD3737FBAD9518461781A8B3  : public RuntimeObject
-{
-	// System.String System.Linq.Expressions.SymbolDocumentInfo::<FileName>k__BackingField
-	String_t* ___U3CFileNameU3Ek__BackingField_0;
 };
 
 // System.Linq.Expressions.TypedParameterExpression
@@ -4549,6 +4549,15 @@ struct String_t_StaticFields
 // System.Linq.Expressions.SwitchCase
 
 // System.Linq.Expressions.SwitchCase
+
+// System.Linq.Expressions.SymbolDocumentInfo
+struct SymbolDocumentInfo_tA9A0448DE427113FDD3737FBAD9518461781A8B3_StaticFields
+{
+	// System.Guid System.Linq.Expressions.SymbolDocumentInfo::DocumentType_Text
+	Guid_t ___DocumentType_Text_1;
+};
+
+// System.Linq.Expressions.SymbolDocumentInfo
 
 // System.Linq.Expressions.Interpreter.TryCatchFinallyHandler
 
@@ -5709,15 +5718,6 @@ struct LeaveExceptionHandlerInstruction_t2A2D9FC2B10454A4E1213F71EE7BDA0476B485B
 // System.Linq.Expressions.Interpreter.StoreStaticFieldInstruction
 
 // System.Linq.Expressions.Interpreter.StoreStaticFieldInstruction
-
-// System.Linq.Expressions.SymbolDocumentInfo
-struct SymbolDocumentInfo_tA9A0448DE427113FDD3737FBAD9518461781A8B3_StaticFields
-{
-	// System.Guid System.Linq.Expressions.SymbolDocumentInfo::DocumentType_Text
-	Guid_t ___DocumentType_Text_1;
-};
-
-// System.Linq.Expressions.SymbolDocumentInfo
 
 // System.Linq.Expressions.TypedParameterExpression
 
@@ -21451,7 +21451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OffsetInstruction_ToString_mBC81ACD
 		}
 	}
 	{
-		int32_t* L_2 = (&__this->____offset_0);
+		int32_t* L_2 = (int32_t*)(&__this->____offset_0);
 		String_t* L_3;
 		L_3 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_2, NULL);
 		String_t* L_4;
@@ -22038,7 +22038,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* IndexedBranchInstruction_ToString_m
 	{
 		String_t* L_0;
 		L_0 = VirtualFuncInvoker0< String_t* >::Invoke(9 /* System.String System.Linq.Expressions.Interpreter.Instruction::get_InstructionName() */, __this);
-		int32_t* L_1 = (&__this->____labelIndex_0);
+		int32_t* L_1 = (int32_t*)(&__this->____labelIndex_0);
 		String_t* L_2;
 		L_2 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_1, NULL);
 		String_t* L_3;
@@ -22933,7 +22933,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* EnterTryCatchFinallyInstruction_ToS
 
 IL_000e:
 	{
-		int32_t* L_1 = (&((IndexedBranchInstruction_t40E17E12DF00CE0B40B010A15896A9EA25D8553E*)__this)->____labelIndex_0);
+		int32_t* L_1 = (int32_t*)(&((IndexedBranchInstruction_t40E17E12DF00CE0B40B010A15896A9EA25D8553E*)__this)->____labelIndex_0);
 		String_t* L_2;
 		L_2 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_1, NULL);
 		String_t* L_3;
@@ -35043,9 +35043,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InstructionViewU5BU5D_t2A200DCB627CD67C1DDBD2
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* G_B3_2 = NULL;
 	InstructionU5BU5D_t9F1CCF6FB2BDB315B5136FBD51A21DF1C430172F* G_B3_3 = NULL;
 	{
-		InstructionArray_t462A6779CC45E6F5578352572B16A61954CB8117* L_0 = (&__this->____array_0);
+		InstructionArray_t462A6779CC45E6F5578352572B16A61954CB8117* L_0 = (InstructionArray_t462A6779CC45E6F5578352572B16A61954CB8117*)(&__this->____array_0);
 		InstructionU5BU5D_t9F1CCF6FB2BDB315B5136FBD51A21DF1C430172F* L_1 = L_0->___Instructions_2;
-		InstructionArray_t462A6779CC45E6F5578352572B16A61954CB8117* L_2 = (&__this->____array_0);
+		InstructionArray_t462A6779CC45E6F5578352572B16A61954CB8117* L_2 = (InstructionArray_t462A6779CC45E6F5578352572B16A61954CB8117*)(&__this->____array_0);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = L_2->___Objects_3;
 		Func_2_t2FDA873D8482C79555CFB05233D610E8F1C7C354* L_4 = (Func_2_t2FDA873D8482C79555CFB05233D610E8F1C7C354*)il2cpp_codegen_object_new(Func_2_t2FDA873D8482C79555CFB05233D610E8F1C7C354_il2cpp_TypeInfo_var);
 		NullCheck(L_4);
@@ -35072,7 +35072,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InstructionViewU5BU5D_t2A200DCB627CD67C1DDBD2
 
 IL_0028:
 	{
-		InstructionArray_t462A6779CC45E6F5578352572B16A61954CB8117* L_6 = (&__this->____array_0);
+		InstructionArray_t462A6779CC45E6F5578352572B16A61954CB8117* L_6 = (InstructionArray_t462A6779CC45E6F5578352572B16A61954CB8117*)(&__this->____array_0);
 		List_1_tF8B8CB3D8291FEFE18BE6AF5E7C63F8CC805E927* L_7 = L_6->___DebugCookies_5;
 		G_B3_0 = L_7;
 		G_B3_1 = G_B2_0;
@@ -35091,7 +35091,7 @@ IL_0033:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DebugView_U3CGetInstructionViewsU3Eb__4_0_mB02DE39FFA1ACF7293C293401748CB352456297C (DebugView_t5EA471D85EC9E6FC1DA252194DCDBF8D96232DEA* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	{
-		InstructionArray_t462A6779CC45E6F5578352572B16A61954CB8117* L_0 = (&__this->____array_0);
+		InstructionArray_t462A6779CC45E6F5578352572B16A61954CB8117* L_0 = (InstructionArray_t462A6779CC45E6F5578352572B16A61954CB8117*)(&__this->____array_0);
 		RuntimeLabelU5BU5D_t7B07C229EF5FA8E68637F8C76A93B0B74B47B684* L_1 = L_0->___Labels_4;
 		int32_t L_2 = ___0_index;
 		NullCheck(L_1);
@@ -39852,7 +39852,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Interpreter_get_Name_m2
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Enumerator_get_Current_mB49912FF111A954F2C326BF4FA29A53C1027187B_gshared_inline (Enumerator_t9DBCD072C72E44AB8959D9884EF7F528028F20EC* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = (int32_t)__this->____current_3;
+		int32_t L_0 = __this->____current_3;
 		return L_0;
 	}
 }
@@ -39861,11 +39861,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m0248A96C5334E9A9
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
-		int32_t L_0 = (int32_t)__this->____version_3;
+		int32_t L_0 = __this->____version_3;
 		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)__this->____items_1;
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1 = __this->____items_1;
 		V_0 = L_1;
-		int32_t L_2 = (int32_t)__this->____size_2;
+		int32_t L_2 = __this->____size_2;
 		V_1 = L_2;
 		int32_t L_3 = V_1;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_4 = V_0;
@@ -39911,11 +39911,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
-		int32_t L_0 = (int32_t)__this->____version_3;
+		int32_t L_0 = __this->____version_3;
 		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)__this->____items_1;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = __this->____items_1;
 		V_0 = L_1;
-		int32_t L_2 = (int32_t)__this->____size_2;
+		int32_t L_2 = __this->____size_2;
 		V_1 = L_2;
 		int32_t L_3 = V_1;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = V_0;
@@ -39946,14 +39946,14 @@ IL_0034:
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = (int32_t)__this->____size_2;
+		int32_t L_0 = __this->____size_2;
 		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
 {
 	{
-		RuntimeObject* L_0 = (RuntimeObject*)__this->____current_3;
+		RuntimeObject* L_0 = __this->____current_3;
 		return L_0;
 	}
 }
@@ -39968,14 +39968,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyValuePair_2U5BU5D_t1686C7CBCFA
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_m8508BCECB0654E2E93B1A141382E2688ADE7EE7C_gshared_inline (KeyValuePair_2_tDC26B09C26BA829DDE331BCB6AF7C508C763D7A3* __this, const RuntimeMethod* method) 
 {
 	{
-		RuntimeObject* L_0 = (RuntimeObject*)__this->___value_1;
+		RuntimeObject* L_0 = __this->___value_1;
 		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t KeyValuePair_2_get_Key_mF0E6A8A455FA71BC8EA94E39C8848FB35A836841_gshared_inline (KeyValuePair_2_tDC26B09C26BA829DDE331BCB6AF7C508C763D7A3* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = (int32_t)__this->___key_0;
+		int32_t L_0 = __this->___key_0;
 		return L_0;
 	}
 }
@@ -39984,11 +39984,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m95328F0F59DDEB1A
 	InstructionViewU5BU5D_t2A200DCB627CD67C1DDBD22595A355894F2646A3* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
-		int32_t L_0 = (int32_t)__this->____version_3;
+		int32_t L_0 = __this->____version_3;
 		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
-		InstructionViewU5BU5D_t2A200DCB627CD67C1DDBD22595A355894F2646A3* L_1 = (InstructionViewU5BU5D_t2A200DCB627CD67C1DDBD22595A355894F2646A3*)__this->____items_1;
+		InstructionViewU5BU5D_t2A200DCB627CD67C1DDBD22595A355894F2646A3* L_1 = __this->____items_1;
 		V_0 = L_1;
-		int32_t L_2 = (int32_t)__this->____size_2;
+		int32_t L_2 = __this->____size_2;
 		V_1 = L_2;
 		int32_t L_3 = V_1;
 		InstructionViewU5BU5D_t2A200DCB627CD67C1DDBD22595A355894F2646A3* L_4 = V_0;

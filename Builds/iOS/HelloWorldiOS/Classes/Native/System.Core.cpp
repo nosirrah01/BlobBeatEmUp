@@ -1213,6 +1213,13 @@ struct StringBuilder_t  : public RuntimeObject
 	int32_t ___m_MaxCapacity_4;
 };
 
+// System.Linq.Expressions.SymbolDocumentInfo
+struct SymbolDocumentInfo_tA9A0448DE427113FDD3737FBAD9518461781A8B3  : public RuntimeObject
+{
+	// System.String System.Linq.Expressions.SymbolDocumentInfo::<FileName>k__BackingField
+	String_t* ___U3CFileNameU3Ek__BackingField_0;
+};
+
 // System.Linq.Expressions.Utils
 struct Utils_tC98EE4BDA92045C3F3A73050A1648C0CD74220F8  : public RuntimeObject
 {
@@ -1755,7 +1762,7 @@ struct CoalesceConversionBinaryExpression_tBCFDE6D1826E672B946F8562CBBDC4BFED5CA
 struct Delegate_t  : public RuntimeObject
 {
 	// System.IntPtr System.Delegate::method_ptr
-	Il2CppMethodPointer ___method_ptr_0;
+	intptr_t ___method_ptr_0;
 	// System.IntPtr System.Delegate::invoke_impl
 	intptr_t ___invoke_impl_1;
 	// System.Object System.Delegate::m_target
@@ -2028,13 +2035,6 @@ struct SimpleBinaryExpression_t1C4042D865E6E751FF4D43B3E1BE9ABB392EEF2C  : publi
 	int32_t ___U3CNodeTypeU3Ek__BackingField_5;
 	// System.Type System.Linq.Expressions.SimpleBinaryExpression::<Type>k__BackingField
 	Type_t* ___U3CTypeU3Ek__BackingField_6;
-};
-
-// System.Linq.Expressions.SymbolDocumentInfo
-struct SymbolDocumentInfo_tA9A0448DE427113FDD3737FBAD9518461781A8B3  : public RuntimeObject
-{
-	// System.String System.Linq.Expressions.SymbolDocumentInfo::<FileName>k__BackingField
-	String_t* ___U3CFileNameU3Ek__BackingField_0;
 };
 
 // System.Linq.Expressions.TypedConstantExpression
@@ -2378,6 +2378,15 @@ struct String_t_StaticFields
 // System.Text.StringBuilder
 
 // System.Text.StringBuilder
+
+// System.Linq.Expressions.SymbolDocumentInfo
+struct SymbolDocumentInfo_tA9A0448DE427113FDD3737FBAD9518461781A8B3_StaticFields
+{
+	// System.Guid System.Linq.Expressions.SymbolDocumentInfo::DocumentType_Text
+	Guid_t ___DocumentType_Text_1;
+};
+
+// System.Linq.Expressions.SymbolDocumentInfo
 
 // System.Linq.Expressions.Utils
 struct Utils_tC98EE4BDA92045C3F3A73050A1648C0CD74220F8_StaticFields
@@ -2803,15 +2812,6 @@ struct Exception_t_StaticFields
 // System.Linq.Expressions.SimpleBinaryExpression
 
 // System.Linq.Expressions.SimpleBinaryExpression
-
-// System.Linq.Expressions.SymbolDocumentInfo
-struct SymbolDocumentInfo_tA9A0448DE427113FDD3737FBAD9518461781A8B3_StaticFields
-{
-	// System.Guid System.Linq.Expressions.SymbolDocumentInfo::DocumentType_Text
-	Guid_t ___DocumentType_Text_1;
-};
-
-// System.Linq.Expressions.SymbolDocumentInfo
 
 // System.Linq.Expressions.TypedConstantExpression
 
@@ -23855,7 +23855,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Block2_get_ExpressionCount_m08E0CCFAC
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlyCollection_1_t76DB6014D5D8866A0D28561F8D56D2303331614E* Block2_GetOrMakeExpressions_m031E32DDAE2C364DB8D9852E6F1E9504C05B23CB (Block2_tE678B088FB98AA73C1962C33F86A6CBA31C70912* __this, const RuntimeMethod* method) 
 {
 	{
-		RuntimeObject** L_0 = (&__this->____arg0_3);
+		RuntimeObject** L_0 = (RuntimeObject**)(&__this->____arg0_3);
 		ReadOnlyCollection_1_t76DB6014D5D8866A0D28561F8D56D2303331614E* L_1;
 		L_1 = BlockExpression_ReturnReadOnlyExpressions_mFC59B619E19F8A8D730509B353E87A23FAD2ED9C(__this, L_0, NULL);
 		return L_1;
@@ -23979,7 +23979,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Block3_get_ExpressionCount_m8B2AEFF97
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlyCollection_1_t76DB6014D5D8866A0D28561F8D56D2303331614E* Block3_GetOrMakeExpressions_mE0A8C83CCD88B5EC7325D031B2C4EC870CB6A884 (Block3_t2320C5B47657E293FD21A5A77C053EE813A559C6* __this, const RuntimeMethod* method) 
 {
 	{
-		RuntimeObject** L_0 = (&__this->____arg0_3);
+		RuntimeObject** L_0 = (RuntimeObject**)(&__this->____arg0_3);
 		ReadOnlyCollection_1_t76DB6014D5D8866A0D28561F8D56D2303331614E* L_1;
 		L_1 = BlockExpression_ReturnReadOnlyExpressions_mFC59B619E19F8A8D730509B353E87A23FAD2ED9C(__this, L_0, NULL);
 		return L_1;
@@ -24120,7 +24120,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Block4_get_ExpressionCount_m32B241BF5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlyCollection_1_t76DB6014D5D8866A0D28561F8D56D2303331614E* Block4_GetOrMakeExpressions_mB71697366E9B9FBE0B6309C3A47A5421F84D8070 (Block4_t4F283A434B2D72A539365F0E1340EC9A5FAE0D99* __this, const RuntimeMethod* method) 
 {
 	{
-		RuntimeObject** L_0 = (&__this->____arg0_3);
+		RuntimeObject** L_0 = (RuntimeObject**)(&__this->____arg0_3);
 		ReadOnlyCollection_1_t76DB6014D5D8866A0D28561F8D56D2303331614E* L_1;
 		L_1 = BlockExpression_ReturnReadOnlyExpressions_mFC59B619E19F8A8D730509B353E87A23FAD2ED9C(__this, L_0, NULL);
 		return L_1;
@@ -24278,7 +24278,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Block5_get_ExpressionCount_mC4B56DA8D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlyCollection_1_t76DB6014D5D8866A0D28561F8D56D2303331614E* Block5_GetOrMakeExpressions_m1B17B93ACA00E3FACBA342934F6FEB7A536C6838 (Block5_t4D2A5E5E863EB2C72757ABE96AABAB707E32B32C* __this, const RuntimeMethod* method) 
 {
 	{
-		RuntimeObject** L_0 = (&__this->____arg0_3);
+		RuntimeObject** L_0 = (RuntimeObject**)(&__this->____arg0_3);
 		ReadOnlyCollection_1_t76DB6014D5D8866A0D28561F8D56D2303331614E* L_1;
 		L_1 = BlockExpression_ReturnReadOnlyExpressions_mFC59B619E19F8A8D730509B353E87A23FAD2ED9C(__this, L_0, NULL);
 		return L_1;
@@ -24384,7 +24384,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlyCollection_1_t76DB6014D5D8866A0D28561
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		RuntimeObject** L_0 = (&__this->____expressions_3);
+		RuntimeObject** L_0 = (RuntimeObject**)(&__this->____expressions_3);
 		ReadOnlyCollection_1_t76DB6014D5D8866A0D28561F8D56D2303331614E* L_1;
 		L_1 = ExpressionUtils_ReturnReadOnly_TisExpression_t70AA908ECBD33E94249BF235E4EBB0F831AD8785_m32D64FCF8FA6866F70540B0A0BA21D2F3C76EB29(L_0, ExpressionUtils_ReturnReadOnly_TisExpression_t70AA908ECBD33E94249BF235E4EBB0F831AD8785_m32D64FCF8FA6866F70540B0A0BA21D2F3C76EB29_RuntimeMethod_var);
 		return L_1;
@@ -24436,7 +24436,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlyCollection_1_tFF3A96CB3B2F8DC59789963
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		RuntimeObject** L_0 = (&__this->____variables_3);
+		RuntimeObject** L_0 = (RuntimeObject**)(&__this->____variables_3);
 		ReadOnlyCollection_1_tFF3A96CB3B2F8DC59789963B01C8937823675505* L_1;
 		L_1 = ExpressionUtils_ReturnReadOnly_TisParameterExpression_tE8D3A1137422F75D256CBB200EDC82820F240110_m5E6794C440A190349149EE2BCF503228F618BB53(L_0, ExpressionUtils_ReturnReadOnly_TisParameterExpression_tE8D3A1137422F75D256CBB200EDC82820F240110_m5E6794C440A190349149EE2BCF503228F618BB53_RuntimeMethod_var);
 		return L_1;
@@ -24562,7 +24562,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Scope1_get_ExpressionCount_mC893F9043
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlyCollection_1_t76DB6014D5D8866A0D28561F8D56D2303331614E* Scope1_GetOrMakeExpressions_m6612DB61B035FC3C9002E860A13551854B8C3D5B (Scope1_tAB538848C6EB467B741FDFDC1FA7E1CA79A03B8A* __this, const RuntimeMethod* method) 
 {
 	{
-		RuntimeObject** L_0 = (&__this->____body_4);
+		RuntimeObject** L_0 = (RuntimeObject**)(&__this->____body_4);
 		ReadOnlyCollection_1_t76DB6014D5D8866A0D28561F8D56D2303331614E* L_1;
 		L_1 = BlockExpression_ReturnReadOnlyExpressions_mFC59B619E19F8A8D730509B353E87A23FAD2ED9C(__this, L_0, NULL);
 		return L_1;
@@ -24686,7 +24686,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlyCollection_1_t76DB6014D5D8866A0D28561
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		RuntimeObject** L_0 = (&__this->____body_4);
+		RuntimeObject** L_0 = (RuntimeObject**)(&__this->____body_4);
 		ReadOnlyCollection_1_t76DB6014D5D8866A0D28561F8D56D2303331614E* L_1;
 		L_1 = ExpressionUtils_ReturnReadOnly_TisExpression_t70AA908ECBD33E94249BF235E4EBB0F831AD8785_m32D64FCF8FA6866F70540B0A0BA21D2F3C76EB29(L_0, ExpressionUtils_ReturnReadOnly_TisExpression_t70AA908ECBD33E94249BF235E4EBB0F831AD8785_m32D64FCF8FA6866F70540B0A0BA21D2F3C76EB29_RuntimeMethod_var);
 		return L_1;
