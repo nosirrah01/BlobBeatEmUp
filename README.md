@@ -1,6 +1,6 @@
 # BlobBeatEmUp
 
-A fun and engaging beat 'em up game featuring blob characters. Currently, this project is in the early stages of development, with a static white circle on the screen as a placeholder for the main character.
+A fun and engaging beat 'em up game featuring blob characters. Currently, this project is in the early stages of development, with a static white circle on the screen as a placeholder for the main character and a ground below.
 
 ## Table of Contents
 
@@ -48,7 +48,11 @@ Alternatively, you can use the existing .xcodeproj file from the latest build lo
 
 ## Features
 
-- Placeholder feature: A static white circle on the screen representing the main character. More features will be added as the project progresses.
+- Placeholder features:
+  - A static white circle on the screen representing the main character.
+  - Ground placed below the main character.
+  
+More features will be added as the project progresses.
 
 ## Contributing
 
