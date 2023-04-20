@@ -8,8 +8,11 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HelloWorld.unity
     guid: 62bef9d25da7f764fb09596f6d93a4b7
+  - enabled: 1
+    path: Assets/Scenes/MainGameScene.unity
+    guid: 2f2ee8a980885f24f8814aeffe73e365
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: ec76692e5094526418fd1bdebe58c08e, type: 2}
