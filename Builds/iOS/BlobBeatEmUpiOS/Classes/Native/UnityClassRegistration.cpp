@@ -27,6 +27,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_JSONSerialize();
 	RegisterModule_JSONSerialize();
 
+	void RegisterModule_Physics2D();
+	RegisterModule_Physics2D();
+
 	void RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
 	RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
 
@@ -175,7 +178,7 @@ class TilemapRenderer;
 class TrailRenderer; 
 class VFXRenderer; 
 class Rigidbody; 
-class Rigidbody2D; 
+class Rigidbody2D; template <> void RegisterUnityClass<Rigidbody2D>(const char*);
 namespace TextRenderingPrivate { class TextMesh; } 
 class Transform; template <> void RegisterUnityClass<Transform>(const char*);
 namespace UI { class RectTransform; } template <> void RegisterUnityClass<UI::RectTransform>(const char*);
@@ -252,7 +255,7 @@ class GraphicsSettings; template <> void RegisterUnityClass<GraphicsSettings>(co
 class InputManager; template <> void RegisterUnityClass<InputManager>(const char*);
 class MonoManager; template <> void RegisterUnityClass<MonoManager>(const char*);
 class NavMeshProjectSettings; 
-class Physics2DSettings; 
+class Physics2DSettings; template <> void RegisterUnityClass<Physics2DSettings>(const char*);
 class PhysicsManager; 
 class PlayerSettings; template <> void RegisterUnityClass<PlayerSettings>(const char*);
 class QualitySettings; template <> void RegisterUnityClass<QualitySettings>(const char*);
@@ -274,7 +277,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 66 non stripped classes
+	//Total: 68 non stripped classes
 	//0. Animator
 	RegisterUnityClass<Animator>("Animation");
 	//1. AnimatorController
@@ -399,13 +402,17 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<TimeManager>("Core");
 	//61. Transform
 	RegisterUnityClass<Transform>("Core");
-	//62. TextRendering::Font
+	//62. Physics2DSettings
+	RegisterUnityClass<Physics2DSettings>("Physics2D");
+	//63. Rigidbody2D
+	RegisterUnityClass<Rigidbody2D>("Physics2D");
+	//64. TextRendering::Font
 	RegisterUnityClass<TextRendering::Font>("TextRendering");
-	//63. UI::Canvas
+	//65. UI::Canvas
 	RegisterUnityClass<UI::Canvas>("UI");
-	//64. UI::CanvasGroup
+	//66. UI::CanvasGroup
 	RegisterUnityClass<UI::CanvasGroup>("UI");
-	//65. UI::CanvasRenderer
+	//67. UI::CanvasRenderer
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
 
 }

@@ -242,6 +242,7 @@
 		D96E41F296B28A08BF273BEF /* UnityEngine.SharedInternalsModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4EC46CDA24BDC2859AEB724 /* UnityEngine.SharedInternalsModule.cpp */; };
 		DC334FBA911B5DA964DE9FFF /* UnityNotificationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E54F18A5D22F3AE40AFE95 /* UnityNotificationData.m */; };
 		DF0B4428AF6CB8362BD2299C /* GenericMethods__3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C44467591D7416DA3C05B69 /* GenericMethods__3.cpp */; };
+		E01E4988945ACFBB117644FC /* Generics__31.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CD4CD08DD3C3B5DD9AE206 /* Generics__31.cpp */; };
 		E0EB41858AEFB8FB2F483AA2 /* mscorlib__6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 796D489F8910CD85418E49AB /* mscorlib__6.cpp */; };
 		E1684A3797D1B2256217D29F /* UnityEngine.Physics2DModule_CodeGen.c in Sources */ = {isa = PBXBuildFile; fileRef = E41D401FA621991F8680AC9C /* UnityEngine.Physics2DModule_CodeGen.c */; };
 		E1E0435C88216693D34BEC4C /* Generics__23.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D39418FAEB98F2C6B052EA2 /* Generics__23.cpp */; };
@@ -589,6 +590,7 @@
 		DE6F4D47AC16154E4BD88BA4 /* Generics__26.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__26.cpp; path = Classes/Native/Generics__26.cpp; sourceTree = SOURCE_ROOT; };
 		E01B47B78EB5FEBF0EEA98F7 /* System.Core_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = System.Core_CodeGen.c; path = Classes/Native/System.Core_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		E1494DD58163143E21EF7906 /* Il2CppCCalculateFieldValues1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCCalculateFieldValues1.cpp; path = Classes/Native/Il2CppCCalculateFieldValues1.cpp; sourceTree = SOURCE_ROOT; };
+		E1CD4CD08DD3C3B5DD9AE206 /* Generics__31.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__31.cpp; path = Classes/Native/Generics__31.cpp; sourceTree = SOURCE_ROOT; };
 		E2054EFBBF6D8A615FB5E486 /* UnityNotificationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UnityNotificationManager.h; path = Libraries/com.unity.mobile.notifications/Runtime/iOS/Plugins/UnityNotificationManager.h; sourceTree = SOURCE_ROOT; };
 		E2FB44CF894027C01D549886 /* UnityEngine.UI__2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UI__2.cpp; path = Classes/Native/UnityEngine.UI__2.cpp; sourceTree = SOURCE_ROOT; };
 		E3244A37A8A91B12E5CF9F56 /* UnityEngine.UIElementsModule__4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UIElementsModule__4.cpp; path = Classes/Native/UnityEngine.UIElementsModule__4.cpp; sourceTree = SOURCE_ROOT; };
@@ -1037,6 +1039,7 @@
 				8BC14B95AB1CCB6F790480F1 /* UnresolvedVirtualCallStubs.cpp */,
 				555A40E59228E6BCECB8C0C8 /* __Generated.cpp */,
 				69254A7992893F42EB4A9748 /* __Generated_CodeGen.c */,
+				E1CD4CD08DD3C3B5DD9AE206 /* Generics__31.cpp */,
 			);
 			path = Native;
 			sourceTree = "<group>";
@@ -1500,6 +1503,7 @@
 				5E714BB58193566D9D14D79C /* UnityAppController+Notifications.mm in Sources */,
 				2B184CE4A7343B82A1924E3D /* UnityNotificationWrapper.m in Sources */,
 				1875479FAA1B9A6163EE118A /* UnityNotificationManager.m in Sources */,
+				E01E4988945ACFBB117644FC /* Generics__31.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
