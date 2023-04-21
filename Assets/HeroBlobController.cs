@@ -29,6 +29,11 @@ public class HeroBlobController : MonoBehaviour
                 // This means the finger is currently pressing the screen.
                 moveRight = touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Stationary;
             }
+            else
+            {
+                // If the touch is on the left side of the screen, set moveRight to false.
+                moveRight = false;
+            }
         }
         else
         {
@@ -41,10 +46,19 @@ public class HeroBlobController : MonoBehaviour
         {
             MoveRight();
         }
+        else
+        {
+            StopMoving();
+        }
     }
 
     void MoveRight()
     {
         rb.velocity = new Vector2(speed, rb.velocity.y);
+    }
+
+    void StopMoving()
+    {
+        rb.velocity = new Vector2(0, rb.velocity.y);
     }
 }
