@@ -34,10 +34,6 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 // Readme/Section
 struct Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401;
 
-IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C String_t* _stringLiteral8352218E94F62ADF44483239B8CF180BA632E0E7;
-IL2CPP_EXTERN_C String_t* _stringLiteral91553B21EA61201F33DA8B896190CB40DBE8516A;
-IL2CPP_EXTERN_C String_t* _stringLiteralA60FD78F88D43CC85B8673929C037B4F906B71AC;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F_m0712B7A9DBBAE2C319B4B03394E7731B86FACBF2_RuntimeMethod_var;
 
 
@@ -53,15 +49,6 @@ IL2CPP_EXTERN_C_END
 // <Module>
 struct U3CModuleU3E_tBB65183F1134474D09FF49B95625D25472B9BA8B 
 {
-};
-
-// System.String
-struct String_t  : public RuntimeObject
-{
-	// System.Int32 System.String::_stringLength
-	int32_t ____stringLength_4;
-	// System.Char System.String::_firstChar
-	Il2CppChar ____firstChar_5;
 };
 
 // System.ValueType
@@ -125,17 +112,6 @@ struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7
 	float ___x_0;
 	// System.Single UnityEngine.Vector2::y
 	float ___y_1;
-};
-
-// UnityEngine.Vector3
-struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 
-{
-	// System.Single UnityEngine.Vector3::x
-	float ___x_2;
-	// System.Single UnityEngine.Vector3::y
-	float ___y_3;
-	// System.Single UnityEngine.Vector3::z
-	float ___z_4;
 };
 
 // System.Void
@@ -251,22 +227,15 @@ struct HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3  : public Mo
 {
 	// System.Single HeroBlobController::speed
 	float ___speed_4;
+	// System.Boolean HeroBlobController::moveRight
+	bool ___moveRight_5;
 	// UnityEngine.Rigidbody2D HeroBlobController::rb
-	Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* ___rb_5;
+	Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* ___rb_6;
 };
 
 // <Module>
 
 // <Module>
-
-// System.String
-struct String_t_StaticFields
-{
-	// System.String System.String::Empty
-	String_t* ___Empty_6;
-};
-
-// System.String
 
 // Readme/Section
 
@@ -313,33 +282,6 @@ struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
 };
 
 // UnityEngine.Vector2
-
-// UnityEngine.Vector3
-struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
-{
-	// UnityEngine.Vector3 UnityEngine.Vector3::zeroVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector_5;
-	// UnityEngine.Vector3 UnityEngine.Vector3::oneVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector_6;
-	// UnityEngine.Vector3 UnityEngine.Vector3::upVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector_7;
-	// UnityEngine.Vector3 UnityEngine.Vector3::downVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector_8;
-	// UnityEngine.Vector3 UnityEngine.Vector3::leftVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector_9;
-	// UnityEngine.Vector3 UnityEngine.Vector3::rightVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector_10;
-	// UnityEngine.Vector3 UnityEngine.Vector3::forwardVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector_11;
-	// UnityEngine.Vector3 UnityEngine.Vector3::backVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector_12;
-	// UnityEngine.Vector3 UnityEngine.Vector3::positiveInfinityVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector_13;
-	// UnityEngine.Vector3 UnityEngine.Vector3::negativeInfinityVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector_14;
-};
-
-// UnityEngine.Vector3
 
 // System.Void
 
@@ -389,20 +331,14 @@ inline Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* Component_GetCompo
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39 (const RuntimeMethod* method) ;
 // UnityEngine.Touch UnityEngine.Input::GetTouch(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Touch_t03E51455ED508492B3F278903A0114FA0E87B417 Input_GetTouch_m75D99FE801A94279874FA8DC6B6ADAD35F5123B1 (int32_t ___0_index, const RuntimeMethod* method) ;
-// UnityEngine.TouchPhase UnityEngine.Touch::get_phase()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0 (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector2 UnityEngine.Touch::get_position()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Touch_get_position_m41B9EB0F3F3E1BE98CEB388253A9E31979CB964A (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.Screen::get_width()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9 (const RuntimeMethod* method) ;
+// UnityEngine.TouchPhase UnityEngine.Touch::get_phase()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0 (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
 // System.Void HeroBlobController::MoveRight()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HeroBlobController_MoveRight_m761F6666CE65E8499A35BC960759585E00611598 (HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Debug::Log(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.Input::GetMouseButton(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetMouseButton_m4995DD4A2D4F916565C1B1B5AAF7DF17C126B3EA (int32_t ___0_button, const RuntimeMethod* method) ;
-// UnityEngine.Vector3 UnityEngine.Input::get_mousePosition()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C (const RuntimeMethod* method) ;
 // UnityEngine.Vector2 UnityEngine.Rigidbody2D::get_velocity()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Rigidbody2D_get_velocity_mBD8AC6F93F0E24CC41D2361BCEF74F81303720EF (Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
@@ -441,8 +377,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HeroBlobController_Start_mFB5AE859F9252E
 		// rb = GetComponent<Rigidbody2D>();
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_0;
 		L_0 = Component_GetComponent_TisRigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F_m0712B7A9DBBAE2C319B4B03394E7731B86FACBF2(__this, Component_GetComponent_TisRigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F_m0712B7A9DBBAE2C319B4B03394E7731B86FACBF2_RuntimeMethod_var);
-		__this->___rb_5 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___rb_5), (void*)L_0);
+		__this->___rb_6 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___rb_6), (void*)L_0);
 		// }
 		return;
 	}
@@ -450,120 +386,90 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HeroBlobController_Start_mFB5AE859F9252E
 // System.Void HeroBlobController::Update()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HeroBlobController_Update_m57BA59110A3AFF48260955F5AF7698DD70AC695A (HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3* __this, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8352218E94F62ADF44483239B8CF180BA632E0E7);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral91553B21EA61201F33DA8B896190CB40DBE8516A);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA60FD78F88D43CC85B8673929C037B4F906B71AC);
-		s_Il2CppMethodInitialized = true;
-	}
 	Touch_t03E51455ED508492B3F278903A0114FA0E87B417 V_0;
 	memset((&V_0), 0, sizeof(V_0));
+	HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3* G_B4_0 = NULL;
+	HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3* G_B3_0 = NULL;
+	int32_t G_B5_0 = 0;
+	HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3* G_B5_1 = NULL;
 	{
 		// if (Input.touchCount > 0)
 		int32_t L_0;
 		L_0 = Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39(NULL);
 		if ((((int32_t)L_0) <= ((int32_t)0)))
 		{
-			goto IL_004b;
+			goto IL_0043;
 		}
 	}
 	{
-		// Touch touch = Input.GetTouch(0);
+		// Touch touch = Input.GetTouch(0); // Get the first touch (assuming a single touch input).
 		Touch_t03E51455ED508492B3F278903A0114FA0E87B417 L_1;
 		L_1 = Input_GetTouch_m75D99FE801A94279874FA8DC6B6ADAD35F5123B1(0, NULL);
 		V_0 = L_1;
-		// if (touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved)
-		int32_t L_2;
-		L_2 = Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0((&V_0), NULL);
-		if ((((int32_t)L_2) == ((int32_t)2)))
-		{
-			goto IL_0023;
-		}
-	}
-	{
-		int32_t L_3;
-		L_3 = Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0((&V_0), NULL);
-		if ((!(((uint32_t)L_3) == ((uint32_t)1))))
-		{
-			goto IL_0083;
-		}
-	}
-
-IL_0023:
-	{
 		// if (touch.position.x > Screen.width / 2)
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4;
-		L_4 = Touch_get_position_m41B9EB0F3F3E1BE98CEB388253A9E31979CB964A((&V_0), NULL);
-		float L_5 = L_4.___x_0;
-		int32_t L_6;
-		L_6 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
-		if ((!(((float)L_5) > ((float)((float)((int32_t)(L_6/2)))))))
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
+		L_2 = Touch_get_position_m41B9EB0F3F3E1BE98CEB388253A9E31979CB964A((&V_0), NULL);
+		float L_3 = L_2.___x_0;
+		int32_t L_4;
+		L_4 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
+		if ((!(((float)L_3) > ((float)((float)((int32_t)(L_4/2)))))))
 		{
-			goto IL_0040;
+			goto IL_004a;
 		}
 	}
 	{
-		// MoveRight();
-		HeroBlobController_MoveRight_m761F6666CE65E8499A35BC960759585E00611598(__this, NULL);
-		return;
+		// moveRight = touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Stationary;
+		int32_t L_5;
+		L_5 = Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0((&V_0), NULL);
+		G_B3_0 = __this;
+		if (!L_5)
+		{
+			G_B4_0 = __this;
+			goto IL_003b;
+		}
+	}
+	{
+		int32_t L_6;
+		L_6 = Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0((&V_0), NULL);
+		G_B5_0 = ((((int32_t)L_6) == ((int32_t)2))? 1 : 0);
+		G_B5_1 = G_B3_0;
+		goto IL_003c;
 	}
 
-IL_0040:
+IL_003b:
 	{
-		// Debug.Log("Touch detected on the left side of the screen.");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralA60FD78F88D43CC85B8673929C037B4F906B71AC, NULL);
-		return;
+		G_B5_0 = 1;
+		G_B5_1 = G_B4_0;
 	}
 
-IL_004b:
+IL_003c:
 	{
-		// else if (Input.GetMouseButton(0))
-		bool L_7;
-		L_7 = Input_GetMouseButton_m4995DD4A2D4F916565C1B1B5AAF7DF17C126B3EA(0, NULL);
+		NullCheck(G_B5_1);
+		G_B5_1->___moveRight_5 = (bool)G_B5_0;
+		goto IL_004a;
+	}
+
+IL_0043:
+	{
+		// moveRight = false;
+		__this->___moveRight_5 = (bool)0;
+	}
+
+IL_004a:
+	{
+		// if (moveRight)
+		bool L_7 = __this->___moveRight_5;
 		if (!L_7)
 		{
-			goto IL_0079;
-		}
-	}
-	{
-		// Vector3 mousePosition = Input.mousePosition;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
-		L_8 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
-		// if (mousePosition.x > Screen.width / 2)
-		float L_9 = L_8.___x_2;
-		int32_t L_10;
-		L_10 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
-		if ((!(((float)L_9) > ((float)((float)((int32_t)(L_10/2)))))))
-		{
-			goto IL_006e;
+			goto IL_0058;
 		}
 	}
 	{
 		// MoveRight();
 		HeroBlobController_MoveRight_m761F6666CE65E8499A35BC960759585E00611598(__this, NULL);
-		return;
 	}
 
-IL_006e:
-	{
-		// Debug.Log("Mouse click detected on the left side of the screen.");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral91553B21EA61201F33DA8B896190CB40DBE8516A, NULL);
-		return;
-	}
-
-IL_0079:
-	{
-		// Debug.Log("No touch or mouse input detected.");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral8352218E94F62ADF44483239B8CF180BA632E0E7, NULL);
-	}
-
-IL_0083:
+IL_0058:
 	{
 		// }
 		return;
@@ -574,9 +480,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HeroBlobController_MoveRight_m761F6666CE
 {
 	{
 		// rb.velocity = new Vector2(speed, rb.velocity.y);
-		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_0 = __this->___rb_5;
+		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_0 = __this->___rb_6;
 		float L_1 = __this->___speed_4;
-		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_2 = __this->___rb_5;
+		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_2 = __this->___rb_6;
 		NullCheck(L_2);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3;
 		L_3 = Rigidbody2D_get_velocity_mBD8AC6F93F0E24CC41D2361BCEF74F81303720EF(L_2, NULL);
