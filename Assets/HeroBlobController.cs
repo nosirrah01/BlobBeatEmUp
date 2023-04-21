@@ -25,31 +25,26 @@ public class HeroBlobController : MonoBehaviour
 
             Touch touch = Input.GetTouch(0); // Get the first touch (assuming a single touch input).
 
-            // Check if there is any touch input.
-            if (Input.touchCount > 0)
+            // Check if the touch is in the "Began", "Stationary", or "Moved" phase.
+            if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved)
             {
-                Touch touch = Input.GetTouch(0); // Get the first touch (assuming a single touch input).
-
-                // Check if the touch is in the "Began", "Stationary", or "Moved" phase.
-                if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved)
+                // Check if the touch is on the right side of the screen.
+                if (touch.position.x > Screen.width / 2)
                 {
-                    // Check if the touch is on the right side of the screen.
-                    if (touch.position.x > Screen.width / 2)
-                    {
-                        moveDirection = 1.0f; // Move right
-                    }
-                    else
-                    {
-                        moveDirection = -1.0f; // Move left
-                    }
+                    moveDirection = 1.0f; // Move right
+                }
+                else
+                {
+                    moveDirection = -1.0f; // Move left
                 }
             }
 
             Move();
         }
-
-        void Move()
-        {
-            rb.velocity = new Vector2(moveDirection * speed, rb.velocity.y);
-        }
     }
+        
+    void Move()
+    {
+        rb.velocity = new Vector2(moveDirection * speed, rb.velocity.y);
+    }
+}
