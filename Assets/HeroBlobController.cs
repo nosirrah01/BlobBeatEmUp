@@ -17,6 +17,7 @@ public class HeroBlobController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Check for touch input on mobile devices
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -26,7 +27,28 @@ public class HeroBlobController : MonoBehaviour
                 {
                     MoveRight();
                 }
+                else
+                {
+                    Debug.Log("Touch detected on the left side of the screen.");
+                }
             }
+        }
+        // Check for mouse input in the Unity Editor
+        else if (Input.GetMouseButton(0))
+        {
+            Vector3 mousePosition = Input.mousePosition;
+            if (mousePosition.x > Screen.width / 2)
+            {
+                MoveRight();
+            }
+            else
+            {
+                Debug.Log("Mouse click detected on the left side of the screen.");
+            }
+        }
+        else
+        {
+            Debug.Log("No touch or mouse input detected.");
         }
     }
 
