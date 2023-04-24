@@ -1,6 +1,6 @@
 # BlobBeatEmUp
 
-A fun and engaging beat 'em up game featuring blob characters. Currently, this project is in the early stages of development, with a static white circle on the screen as a placeholder for the main character and a ground below.
+A fun and engaging beat 'em up game featuring blob characters. This project is in the early stages of development and currently features a charming Hero Blob character that can move left and right by touching the left or right side of the screen.
 
 ## Table of Contents
 
@@ -13,7 +13,6 @@ A fun and engaging beat 'em up game featuring blob characters. Currently, this p
 
 In the future, BlobBeatEmUp aims to include the following features:
 
-- A Main Hero Blob that you can move left and right.
 - The ability to attack with a spike that comes out of the blob to the left and right.
 - A variety of different colored blob enemies with different abilities and fighting styles.
 - High-quality graphics and animations.
@@ -48,9 +47,11 @@ Alternatively, you can use the existing .xcodeproj file from the latest build lo
 
 ## Features
 
-- Placeholder features:
-  - A static white circle on the screen representing the main character.
-  - Ground placed below the main character.
+- Hero Blob character that can move left and right:
+  - Touch the left side of the screen to move left.
+  - Touch the right side of the screen to move right.
+  - Hero Blob has distinct sprites for idle, moving left, and moving right states.
+- Ground placed below the main character.
   
 More features will be added as the project progresses.
 
