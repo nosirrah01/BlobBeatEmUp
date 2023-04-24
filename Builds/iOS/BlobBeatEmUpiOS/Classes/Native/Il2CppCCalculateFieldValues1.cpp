@@ -496,6 +496,8 @@ struct RichTextTagAttributeU5BU5D_tEE9D071B3246F23742DBF4226567620BCBB24A14;
 struct SelectableU5BU5D_t4160E135F02A40F75A63F787D36F31FEC6FE91A9;
 // System.Single[]
 struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
+// UnityEngine.Sprite[]
+struct SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
 // System.String[]
@@ -848,6 +850,8 @@ struct Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692;
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
 // UnityEngine.TextCore.Text.SpriteAsset
 struct SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313;
+// UnityEngine.SpriteRenderer
+struct SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B;
 // System.Diagnostics.Stopwatch
 struct Stopwatch_tA188A210449E22C07053A7D3014DD182C7369043;
 // System.IO.Stream
@@ -10444,10 +10448,14 @@ struct HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3  : public Mo
 {
 	// System.Single HeroBlobController::speed
 	float ___speed_4;
+	// UnityEngine.Sprite[] HeroBlobController::heroBlobSprites
+	SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B* ___heroBlobSprites_5;
 	// System.Single HeroBlobController::moveDirection
-	float ___moveDirection_5;
+	float ___moveDirection_6;
 	// UnityEngine.Rigidbody2D HeroBlobController::rb
-	Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* ___rb_6;
+	Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* ___rb_7;
+	// UnityEngine.SpriteRenderer HeroBlobController::sr
+	SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* ___sr_8;
 };
 
 // UnityEngine.EventSystems.UIBehaviour
@@ -17606,15 +17614,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4239[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4244[3] = 
 {
 	static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___IsTextualNodeBitmap_0)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___CanReadContentAsBitmap_1)),static_cast<int32_t>(offsetof(XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD_StaticFields, ___HasValueBitmap_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4249[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4247[5] = 
 {
-	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4257[3] = 
-{
-	static_cast<int32_t>(offsetof(HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3, ___speed_4)),static_cast<int32_t>(offsetof(HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3, ___moveDirection_5)),static_cast<int32_t>(offsetof(HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3, ___rb_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4258[4] = 
+	static_cast<int32_t>(offsetof(HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3, ___speed_4)),static_cast<int32_t>(offsetof(HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3, ___heroBlobSprites_5)),static_cast<int32_t>(offsetof(HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3, ___moveDirection_6)),static_cast<int32_t>(offsetof(HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3, ___rb_7)),static_cast<int32_t>(offsetof(HeroBlobController_tA6475493DA41E2142B38F0B69BEB13795E44FFD3, ___sr_8)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4248[4] = 
 {
 	static_cast<int32_t>(offsetof(Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401, ___heading_0)),static_cast<int32_t>(offsetof(Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401, ___text_1)),static_cast<int32_t>(offsetof(Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401, ___linkText_2)),static_cast<int32_t>(offsetof(Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401, ___url_3)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4259[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4249[4] = 
 {
 	static_cast<int32_t>(offsetof(Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB, ___icon_4)),static_cast<int32_t>(offsetof(Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB, ___title_5)),static_cast<int32_t>(offsetof(Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB, ___sections_6)),static_cast<int32_t>(offsetof(Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB, ___loadedLayout_7)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4253[4] = 
+{
+	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
