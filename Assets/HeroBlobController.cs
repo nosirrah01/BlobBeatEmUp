@@ -63,11 +63,11 @@ public class HeroBlobController : MonoBehaviour
     {
         if (moveDirection > 0)
         {
-            sr.sprite = heroBlobSprites[2]; // Moving right sprite
+            sr.sprite = heroBlobSprites[1]; // Moving right sprite
         }
         else if (moveDirection < 0)
         {
-            sr.sprite = heroBlobSprites[1]; // Moving left sprite
+            sr.sprite = heroBlobSprites[2]; // Moving left sprite
         }
         else
         {

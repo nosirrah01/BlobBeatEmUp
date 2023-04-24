@@ -588,11 +588,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HeroBlobController_UpdateSprite_m7823B1D
 		}
 	}
 	{
-		// sr.sprite = heroBlobSprites[2]; // Moving right sprite
+		// sr.sprite = heroBlobSprites[1]; // Moving right sprite
 		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_1 = __this->___sr_8;
 		SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B* L_2 = __this->___heroBlobSprites_5;
 		NullCheck(L_2);
-		int32_t L_3 = 2;
+		int32_t L_3 = 1;
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_4 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
 		NullCheck(L_1);
 		SpriteRenderer_set_sprite_m7B176E33955108C60CAE21DFC153A0FAC674CB53(L_1, L_4, NULL);
@@ -609,11 +609,11 @@ IL_0021:
 		}
 	}
 	{
-		// sr.sprite = heroBlobSprites[1]; // Moving left sprite
+		// sr.sprite = heroBlobSprites[2]; // Moving left sprite
 		SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B* L_6 = __this->___sr_8;
 		SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B* L_7 = __this->___heroBlobSprites_5;
 		NullCheck(L_7);
-		int32_t L_8 = 1;
+		int32_t L_8 = 2;
 		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_9 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
 		NullCheck(L_6);
 		SpriteRenderer_set_sprite_m7B176E33955108C60CAE21DFC153A0FAC674CB53(L_6, L_9, NULL);
